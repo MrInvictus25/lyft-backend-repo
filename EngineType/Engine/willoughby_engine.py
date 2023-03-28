@@ -1,9 +1,8 @@
 from abc import ABC
+from EngineType.engine import Engine
 
-from car import Car
 
-
-class WilloughbyEngine(Car, ABC):
+class WilloughbyEngine(Engine, ABC):
     def __init__(self, last_service_date, current_mileage, last_service_mileage):
         super().__init__(last_service_date)
         self.current_mileage = current_mileage
