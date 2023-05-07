@@ -1,5 +1,5 @@
 from abc import ABC
-from EngineType.battery import Battery
+from EngineType.Battery.battery import Battery
 from utils import add_years_to_date
 
 class SpindlerBattery(Battery, ABC):
